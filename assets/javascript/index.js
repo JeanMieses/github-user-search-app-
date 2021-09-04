@@ -27,11 +27,11 @@ const displayUserData = (data) => {
   document.querySelector('.followers').innerText = data.followers;
   document.querySelector('.following').innerText = data.following;
 
-  document.querySelector('.location').innerText = data.location || 'Somewhere far away'
-  document.querySelector('.github-blog').innerText = data.blog || 'Not Blog Available';
+  document.querySelector('.location').innerText = data.location || 'Not Location'
+  document.querySelector('.github-blog').innerText = data.blog || 'Not Blog';
   document.querySelector('.github-blog').href = data.blog? `https://${data.blog}` : '#'
-  document.querySelector('.twitter-username').innerText = `@${data.twitter_username}` || 'Not Available';
-  document.querySelector('.company').innerText = data.company || 'Workplace Not Available';
+  document.querySelector('.twitter-username').innerText = (data.twitter_username===null) ? 'Not Twitter' : `@${data.twitter_username}`
+  document.querySelector('.company').innerText = data.company || 'Not Workplace';
 }
 
 const dateFormat = (str) => {
