@@ -22,26 +22,8 @@ window.onload = async () => {
 
 // this toggle between light and dark mode
 document.querySelector('.toggler').addEventListener('click', (e) => {
-  document.querySelector('h1').classList.toggle('h1-lightmode');
-  document.querySelector('.light-mode-text-toggle').classList.toggle('h1-lightmode');
-  document.querySelector('body').classList.toggle('light-background');
-  document.querySelector('.user-card').classList.toggle('user-card-lightmode');
-  name.classList.toggle('h1-lightmode');
-  bio.classList.toggle('bio-lightmode');
-  joined.classList.toggle('joined-ing-lightmode');
-  followsFollwers.classList.toggle('repos-followers-following-lightmode');
-  repo.classList.toggle('text-color-lightmode');
-  followers.classList.toggle('text-color-lightmode');
-  following.classList.toggle('text-color-lightmode');
-
-  blog.classList.toggle('bio-lightmode');
-  location1.classList.toggle('bio-lightmode');
-  twitter_username.classList.toggle('bio-lightmode');
-  company.classList.toggle('bio-lightmode');
-  document.querySelector('#search-user').classList.toggle('input-lightmode');
-  document.querySelector('.form').classList.toggle('input-lightmode');
+  toggleMode();
 })
-
 
 document.querySelector('form').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -70,6 +52,27 @@ const displayUserData = (data) => {
   blog.href = data.blog? `https://${data.blog}` : '#'
   twitter_username.innerText = (data.twitter_username===null) ? 'Not Twitter' : `@${data.twitter_username}`
   company.innerText = data.company || 'Not Workplace';
+}
+
+const toggleMode = () => {
+  document.querySelector('h1').classList.toggle('h1-lightmode');
+  document.querySelector('.light-mode-text-toggle').classList.toggle('h1-lightmode');
+  document.querySelector('body').classList.toggle('light-background');
+  document.querySelector('.user-card').classList.toggle('user-card-lightmode');
+  name.classList.toggle('h1-lightmode');
+  bio.classList.toggle('bio-lightmode');
+  joined.classList.toggle('joined-ing-lightmode');
+  followsFollwers.classList.toggle('repos-followers-following-lightmode');
+  repo.classList.toggle('text-color-lightmode');
+  followers.classList.toggle('text-color-lightmode');
+  following.classList.toggle('text-color-lightmode');
+
+  blog.classList.toggle('bio-lightmode');
+  location1.classList.toggle('bio-lightmode');
+  twitter_username.classList.toggle('bio-lightmode');
+  company.classList.toggle('bio-lightmode');
+  document.querySelector('#search-user').classList.toggle('input-lightmode');
+  document.querySelector('.form').classList.toggle('input-lightmode');
 }
 
 const dateFormat = (str) => {
