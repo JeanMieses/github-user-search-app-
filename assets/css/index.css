@@ -69,11 +69,12 @@ h1 {
   color: #fff;
   text-transform: capitalize;
   font-weight: bold;
-  height: 88%;
+  height: 100%;
   width: 28%;
   text-align: center;
   border: none;
   border-radius: 7px;
+  float: right;
 }
 
 .user-card {
