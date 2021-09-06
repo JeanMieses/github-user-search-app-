@@ -41,6 +41,7 @@ h1 {
   border-radius: 10px;
   height: 100%;
   border: none;
+  box-shadow: 10px 5px 5px #787474
 }
 
 .input-div form input {
@@ -85,6 +86,7 @@ h1 {
   align-items: center;
   padding-bottom: 20px;
   border-radius: 10px;
+  box-shadow: 10px 5px 5px #787474;
 }
 
 .user-profile {
