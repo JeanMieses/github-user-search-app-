@@ -5,8 +5,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
-  /* overflow-y: scroll; */
   overflow-x: hidden;
 }
 
@@ -93,7 +91,6 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  /* border: 1px solid cyan; */
 }
 
 .div-img {
@@ -134,7 +131,6 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* border: 1px solid cyan; */
   margin-bottom: 1em;
   border-radius: 10px;
   margin-bottom: 0.6em;
@@ -216,15 +212,9 @@ h1 {
   }
 
   .div-img {
-    /* width: 30%; */
-    /* height: 90%; */
+    width: 30%;
     margin-right: 0;
     margin-left: 2em;
-  }
-
-  .profile-img {
-    height: 100%;
-    width: 100%;
   }
 
   .user-bio {
@@ -249,7 +239,6 @@ h1 {
     width: 40%;
   }
 
-
   .repos-followers-following div {
       font-size: 15px;
   }
@@ -263,20 +252,17 @@ h1 {
   }
 
   .user-profile {
-    height: 200px;
+    margin-bottom: 1em;
   }
 
   .img-div {
     margin-left: 0;
-  }
-
-  .user-profile {
-    width: 90%;
+    width: 15%;
+    max-width: 100%;
   }
 
   .profile-img {
-    height: 80%;
-    width: 90%;
+    max-width: 100%;
   }
 
 }
